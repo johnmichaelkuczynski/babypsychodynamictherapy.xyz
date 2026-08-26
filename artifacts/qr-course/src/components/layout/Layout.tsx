@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, Scale, GraduationCap, ShieldCheck, Search } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useAdminMode } from "@/lib/adminMode";
+import zhiLogo from "@assets/zhi_logoc_1787735383527.png";
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -54,8 +55,36 @@ export function Sidebar() {
         })}
       </div>
 
-      <div className="p-4 border-t border-border text-xs text-muted-foreground text-center">
-        Psychodynamic Therapy 101
+      <div className="p-4 border-t border-border">
+        <div className="flex items-center justify-center gap-3">
+          <a
+            href="https://zhisystems.ai/"
+            target="_blank"
+            rel="noreferrer"
+            className="shrink-0 rounded-lg ring-1 ring-border shadow-sm transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            aria-label="Visit ZHI Systems"
+            title="Visit ZHI Systems"
+            data-testid="link-zhi-systems"
+          >
+            <img
+              src={zhiLogo}
+              alt="ZHI Systems"
+              className="h-9 w-9 rounded-lg object-cover"
+            />
+          </a>
+          <div className="text-left">
+            <div className="text-xs text-muted-foreground">
+              Psychodynamic Therapy 101
+            </div>
+            <a
+              href="mailto:jmkuczynski@yahoo.com"
+              className="text-xs font-medium text-primary hover:underline"
+              data-testid="link-contact-us"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

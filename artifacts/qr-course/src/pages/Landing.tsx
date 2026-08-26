@@ -8,6 +8,7 @@ import {
   ShieldCheck,
   Search,
 } from "lucide-react";
+import zhiLogo from "@assets/zhi_logoc_1787735383527.png";
 
 const features = [
   {
@@ -66,6 +67,28 @@ export default function Landing() {
           </span>
         </div>
         <div className="flex items-center gap-2">
+          <a
+            href="mailto:jmkuczynski@yahoo.com"
+            className="px-3 py-2 rounded-md text-sm font-medium border border-border hover:bg-secondary transition-colors"
+            data-testid="link-contact-us"
+          >
+            Contact us
+          </a>
+          <a
+            href="https://zhisystems.ai/"
+            target="_blank"
+            rel="noreferrer"
+            className="shrink-0 rounded-lg ring-1 ring-border shadow-sm transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            aria-label="Visit ZHI Systems"
+            title="Visit ZHI Systems"
+            data-testid="link-zhi-systems"
+          >
+            <img
+              src={zhiLogo}
+              alt="ZHI Systems"
+              className="h-9 w-9 rounded-lg object-cover"
+            />
+          </a>
           <Link href="/dashboard">
             <button
               className="px-4 py-2 rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
