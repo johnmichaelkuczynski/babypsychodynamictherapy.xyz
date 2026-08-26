@@ -8,7 +8,7 @@ import {
   ShieldCheck,
   Search,
 } from "lucide-react";
-import zhiLogo from "@assets/zhi_logoc_1787735383527.png";
+import zhiLogo from "@assets/zhi_logoc_1787769431925.png";
 
 const features = [
   {
@@ -68,7 +68,7 @@ export default function Landing() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="mailto:jmkuczynski@yahoo.com"
+            href="mailto:johnmichaelkuczynski@gmail.com"
             className="px-3 py-2 rounded-md text-sm font-medium border border-border hover:bg-secondary transition-colors"
             data-testid="link-contact-us"
           >

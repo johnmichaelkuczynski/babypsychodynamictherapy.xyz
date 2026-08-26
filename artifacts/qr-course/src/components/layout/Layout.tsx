@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, Scale, GraduationCap, ShieldCheck, Search } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useAdminMode } from "@/lib/adminMode";
-import zhiLogo from "@assets/zhi_logoc_1787735383527.png";
+import zhiLogo from "@assets/zhi_logoc_1787769431925.png";
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -77,7 +77,7 @@ export function Sidebar() {
               Psychodynamic Therapy 101
             </div>
             <a
-              href="mailto:jmkuczynski@yahoo.com"
+              href="mailto:johnmichaelkuczynski@gmail.com"
               className="text-xs font-medium text-primary hover:underline"
               data-testid="link-contact-us"
             >
